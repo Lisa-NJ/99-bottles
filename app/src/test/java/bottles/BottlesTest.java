@@ -73,6 +73,16 @@ public class BottlesTest {
   }
 
   @Test
+  public void test7_6() {
+    String versedLyrics =  "7 bottles of beer on the wall, 7 bottles of beer.\n" +
+        "Take one down and pass it around, 1 six-pack of beer on the wall.\n" +
+        "\n" +
+        "1 six-pack of beer on the wall, 1 six-pack of beer.\n" +
+        "Take one down and pass it around, 5 bottles of beer on the wall.";
+    assertEquals(versedLyrics, new Bottles().verses(7, 6));
+  }
+
+  @Test
   public void testTheWholeSong() {
     String wholeSong =
         "99 bottles of beer on the wall, 99 bottles of beer.\n" +
